@@ -49,19 +49,6 @@ curl -X PUT http://localhost:3000/api/nodes/Node-B/health \
   -d '{"healthy":false}'
 ```
 
-## How It Works
-
-Uses MD5-based consistent hashing with 150 virtual nodes per physical node. When an IP comes in, it's hashed and routed to the nearest node on the hash ring. Adding or removing nodes only affects a small portion of the mappings.
-
-## Project Structure
-```
-src/
-├── config/nodes.js           # Node configuration
-├── utils/consistentHash.js   # Hashing algorithm
-├── services/loadBalancer.js  # Main logic
-├── routes/index.js           # API endpoints
-└── server.js                 # Express server
-```
 
 ## Tech Stack
 
