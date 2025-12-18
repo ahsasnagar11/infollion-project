@@ -1,0 +1,21 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.0",
+  "description": "Consistent hashing load balancer with health checks and metrics",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "simulate": "node simulate.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["load-balancer", "consistent-hashing"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
